@@ -86,3 +86,10 @@ The mission includes:
 | Final 3D Error | 0.5423 m | **0.0062 m** |
 
 The LQI controller maintains significantly lower tracking error after persistent disturbances and model mismatch because of its integral position-error states.
+
+
+### LQR vs LQI Mission Visualization
+
+The visualization below shows both controllers during the payload-mismatch phase of the nonlinear Figure-8 mission.
+
+![LQR vs LQI Robustness Mission](results/figures/lqr_vs_lqi_robustness_mission.png)
