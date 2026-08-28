@@ -59,3 +59,9 @@ A 100-run Monte-Carlo study was performed using randomized plant and disturbance
 | Mean Actuator Saturation | 0% | 0% | 0% |
 
 The LQI controller achieved the best statistical robustness under the tested uncertainty range, with substantially lower tracking error and zero persistent final error in the Monte-Carlo experiment.
+
+### RMSE Distribution
+
+The boxplot below shows the tracking-error distribution across all 100 randomized Monte-Carlo runs.
+
+![Monte-Carlo RMSE Distribution](results/figures/monte_carlo_boxplot.png)
