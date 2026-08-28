@@ -65,3 +65,24 @@ The LQI controller achieved the best statistical robustness under the tested unc
 The boxplot below shows the tracking-error distribution across all 100 randomized Monte-Carlo runs.
 
 ![Monte-Carlo RMSE Distribution](results/figures/monte_carlo_boxplot.png)
+
+## Robustness Mission
+
+A final nonlinear Figure-8 mission was used to compare LQR + Feedforward and LQI + Feedforward under multiple disturbances and model uncertainty.
+
+The mission includes:
+
+- Nominal Figure-8 trajectory tracking
+- +5 N X-direction gust
+- -4 N Y-direction gust
+- Payload increase from 1.5 kg to 1.8 kg
+- Diagonal crosswind disturbance
+- Final disturbance recovery
+
+| Metric | LQR + FF | LQI + FF |
+|---|---:|---:|
+| Overall Mission RMSE | 0.4901 m | **0.1705 m** |
+| Crosswind RMSE | 0.7200 m | **0.1028 m** |
+| Final 3D Error | 0.5423 m | **0.0062 m** |
+
+The LQI controller maintains significantly lower tracking error after persistent disturbances and model mismatch because of its integral position-error states.
