@@ -93,3 +93,18 @@ The LQI controller maintains significantly lower tracking error after persistent
 The visualization below shows both controllers during the payload-mismatch phase of the nonlinear Figure-8 mission.
 
 ![LQR vs LQI Robustness Mission](results/figures/lqr_vs_lqi_robustness_mission.png)
+
+## Requirements
+
+- MATLAB R2025b or newer
+- Control System Toolbox
+
+## How to Run
+
+Open the repository folder in MATLAB and run one of the following entry-point scripts:
+
+```matlab
+simulate_lqr_vs_lqi_robustness_mission
+monte_carlo_controller_robustness
+compare_pd_lqr_lqi_robustness
+animate_lqr_vs_lqi_robustness_mission
